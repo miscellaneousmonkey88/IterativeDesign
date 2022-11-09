@@ -5,7 +5,7 @@ html {
   
   
   body {
-    background-image: linear-gradient(to bottom right, lightyellow, pink);
+    background-image: linear-gradient(to bottom right, rgb(255, 253, 250), rgb(255, 212, 167));
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       color: black;
     }
