@@ -1,135 +1,197 @@
+
 html {
-    display:flex;
-    flex-direction: column;
-  }
-  
-  
-  body {
-    background-image: linear-gradient(to bottom right, rgb(246, 243, 253), rgb(255, 255, 255));
+  background-color: white;
+}
+
+body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
-    background-size: 100% 100%;
-    }
-
-    #head {
-      background-image: linear-gradient(to bottom right, rgb(240, 229, 251), rgb(255, 220, 248));
-      padding-bottom:2vw;
-      background-size: contain;
-      outline: 2px solid rgb(207, 165, 255);
-      border-radius: 3vh;
-      margin: 10px;
-    }
-  
-    #title {
-      margin-right: 40px;
-      margin-left: 40px;
-      font-size: 50px;
-    }
-    
-    #subtitle {
-      margin-right: 50px;
-      margin-left: 43px;
-      font-size: 30px;
-    }
-    #subtitle2 {
-      margin-right: 50px;
-      margin-left: 43px;
-      font-size: 20px;
-    }
-    #s {
-      margin-left: 30px;
-    }
-    
-    #hdr {
-      margin: 100px;
-      font-size: 30px;
-    }
-  
-  #txt {
-      margin-right: 200px;
-      margin-left:200px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-size: 18px;
-      color: black;
+    background-attachment: fixed;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
   }
-  #txt3 {
-    margin: 100px;
+
+#head {
+  padding-bottom:2vw;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  /*outline: 1px solid black;*/
+  background-color: white;
+  background-image: url("h3.png");
+  background-size: cover;
+  border-radius: 4vh;
+}
+
+
+#title {
+  margin-right: 40px;
+  margin-left: 40px;
+  font-size: 45px;
+}
+
+#subtitle {
+  margin-right: 50px;
+  margin-left: 43px;
+  font-size: 25px;
+}
+#subtitle2 {
+  margin-right: 50px;
+  margin-left: 43px;
+  font-size: 18px;
+}
+#s {
+  margin-left: 30px;
+}
+
+#hdr {
+  font-weight: 100;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    padding: 50px;
+    border-radius: 40px;
+    font-weight: 400;
+}
+
+#txt {
+  font-weight: 100;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 20px;
+    padding: 50px;
+    border-radius: 40px;
 }
-  
-  #txt2 {
-    margin: 100px;
-    font-size: 18px;
-    color: #231557;
-  }
-  
-  #txtblack {
-    margin: 100px;
-    font-size: 18px;
-    color: #231557;
-  }
-  
-  #arrow {
-    text-align: center;
-    font-size: 100px;
-  }
-  
-  img {
-      max-block-size: 450px;
-      border-radius: 15px;
-      margin: 10px;
-  }
-  
-  #space {
-      color: rgba(0, 0, 0, 0);
-      font-size: 30px;
-  }
 
-  #space2 {
-    color: rgba(0, 0, 0, 0);
-    font-size: 15px;
+#d {
+  opacity: 1;
+  font-size: 20px;
 }
-  
+
+#txt2 {
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 70px;
+  font-size: 18px;
+  color: black;
+}
+
+#txtblack {
+  margin: 70px;
+  font-size: 25px;
+  color: black;
+}
+
+#arrow {
+  text-align: center;
+  font-size: 100px;
+}
+
+img {
+  max-block-size: 300px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
 .gallery-container {
-  display: flex;
-  text-align:center;
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 2vw;
+    border-radius: 20px;
+    align-self: center;
+    margin: 0cm;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: black;
 }
-  .gallery-container1 {
-      /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
-      display: flex;
-      text-align: center;
-      flex-basis: 1 1 auto;
-      scale: 0.75;
-      flex-wrap: wrap;
-      margin-bottom: 0px;
-      justify-content: center;
 
-    }
+.gallery-container:hover {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    display: flex;
+    text-align: center;
+    padding: 2vw;
+    flex-direction: column;
+    border-radius: 20px;
+    align-self: center;
+    margin: 0cm;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: black;
+}
 
-    .gallery-container11 {
-      /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
-      display: flex;
-      text-align: center;
-      flex-wrap: wrap;
-      margin-bottom: 0px;
-      justify-content: center;
-    }
+.gallery-container1 {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  padding-right: 20vw;
+  padding-left: 20vw;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
 
-  
-    .gallery-container3 {
-      /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
-      display: flex;
-      justify-content: center;
-      flex-basis: 1 1 auto;
-      margin-bottom: 0px;
-      margin-top: 40px;
-      font-size: 15px;
-      scale: 1;
-    }
-    
- @keyframes textclip {
-   to {
-     background-position: 200% center;
-   }
- }
+.gallery-container2 {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  padding: 2vw;
+  border-radius: 20px;
+  align-self: center;
+  margin: 0cm;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  color: black;
+}
+
+.gallery-container .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  color:black;
+  font-weight: 500;
+}
+
+#block:hover .middle {
+  transition: .5s ease;
+  opacity: 1;
+  position: relative;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 24px;
+  color:black;
+  font-weight: 500;
+}
+
+#block img:hover {
+  opacity: 0.3;
+}
+
+#block {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
